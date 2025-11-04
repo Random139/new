@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/Random139/new.git'
+                git branch: 'main', url: 'https://github.com/Random139/new.git'
             }
         }
 
