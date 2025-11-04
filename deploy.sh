@@ -8,5 +8,5 @@ then
     sudo apt install python3-pip -y
 fi
 
-pip3 install -r requirements.txt
+sudo apt install python3-flask
 nohup python3 app.py > app.log 2>&1 &
