@@ -9,4 +9,4 @@ then
 fi
 
 sudo apt install python3-flask
-python3 app.py 
+nohup python3 app.py > app.log 2>&1 &
