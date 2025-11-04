@@ -1,7 +1,7 @@
 #!/bin/bash
+set -e
 cd /home/ubuntu/app
 
-# Ensure pip3 exists
 if ! command -v pip3 &> /dev/null
 then
     sudo apt update
@@ -9,5 +9,4 @@ then
 fi
 
 pip3 install -r requirements.txt
-
-python3 app.py
+nohup python3 app.py > app.log 2>&1 &
